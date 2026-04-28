@@ -16,40 +16,40 @@ Admin to monitor and control the entire system
 🚀 Key Features
 
 
-👨‍🎓 Student Module
-Register & Login
-View available job listings
-Apply for jobs
-Track application status
+👨‍🎓 Student
+📝 Register & Login
+🔍 Browse job opportunities
+📩 Apply for jobs
+📊 Track application status
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🏢 Company Module
-Register & Login
-Post job openings
-View student applications
-Manage recruitment process
+🏢 Company
+📝 Register & Login
+📢 Post job openings
+👀 View applicants
+🛠 Manage hiring process
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-⚙️ Admin Module
-View all students
-View all companies
-Manage job postings
-Monitor applications
+⚙️ Admin
+📋 View all students
+🏢 View all companies
+📊 Manage jobs
+🔍 Monitor applications
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Tech Stack
-Technology	Purpose
-Java	Backend logic
-JDBC	Database connectivity
-MySQL	Database management
-HTML	Frontend structure
-CSS	Styling
-JavaScript	Client-side interactivity
-IntelliJ IDEA	Development environment
+Technology	Role
+☕ Java	Backend Logic
+🔗 JDBC	Database Connectivity
+🛢️ MySQL	Database
+🌐 HTML	Structure
+🎨 CSS	Styling
+⚡ JavaScript	Interactivity
+💻 IntelliJ IDEA	IDE
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -80,15 +80,16 @@ SmartPlacementSystem/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+🗄️ Database
 
-🗄️ Database Schema
+Tables used in the system:
 
-The system uses the following tables:
+👨‍🎓 students
+🏢 companies
+💼 jobs
+📩 applications
 
-students → Stores student details
-companies → Stores company information
-jobs → Job postings
-applications → Job applications by students
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⚙️ Setup Guide
 1️⃣ Clone the Repository
 git clone https://github.com/jiteshkhatri11/SmartPlacementSystem.git
@@ -127,8 +128,18 @@ Open view/html/index.html in your browser
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+🚀 Future Improvements
 
-👨‍💻 Author
+
+📄 Resume Upload Feature
+📧 Email Notifications
+📊 Admin Dashboard Analytics
+🌐 REST API Integration
+🚀 Migration to Spring Boot
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+👨‍💻 🔷 AUTHOR
 
 Jitesh Khatri
 🔗 GitHub: https://github.com/jiteshkhatri11
@@ -138,3 +149,13 @@ Jitesh Khatri
 📄 License
 
 This project is licensed under the MIT License.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Support
+
+If you like this project:
+
+⭐ Star the repo
+🍴 Fork it
+🛠 Contribute
