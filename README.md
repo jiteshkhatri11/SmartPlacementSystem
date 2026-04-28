@@ -1,139 +1,142 @@
+Skip to content
+jiteshkhatri11
+SmartPlacementSystem
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security and quality
+Insights
+Settings
+Owner avatar
+SmartPlacementSystem
+Public
+jiteshkhatri11/SmartPlacementSystem
+Go to file
+t
+T
+Name		
+jiteshkhatri11
+jiteshkhatri11
+Create README.md
+2e5c068
+ · 
+now
+src
+Day 1 - Added src folder with model, dao and util packages
+15 minutes ago
+README.md
+Create README.md
+now
+Repository files navigation
+README
 🎓 SmartPlacementSystem
-<div align="center">
 
+A Java-based Smart Placement System designed to connect students with companies for seamless job placement management.
 
-
-
-
-
-
-
-
-
-
-
-</div>
 📌 Overview
 
-A Java-based Smart Placement System designed to connect students 🎓 with companies 🏢 for seamless job placement management.
+A full-stack Java-based Smart Placement System that connects students and companies for efficient job placement management.
 
-It provides a centralized platform for job postings, applications, and administration.
+This system simplifies the recruitment process by providing a centralized platform for job postings, applications, and administration.
 
 ✨ Features
+
 👨‍🎓 Student
-📝 Register & Login
-🔍 Browse job opportunities
-📩 Apply for jobs
-📊 Track application status
+
+📝 Register & Login 🔍 Browse job opportunities 📩 Apply for jobs 📊 Track application status
+
 🏢 Company
-📝 Register & Login
-📢 Post job openings
-👀 View applicants
-🛠 Manage hiring process
+
+📝 Register & Login 📢 Post job openings 👀 View applicants 🛠 Manage hiring process
+
 ⚙️ Admin
-📋 View all students
-🏢 View all companies
-📊 Manage jobs
-🔍 Monitor applications
+
+📋 View all students 🏢 View all companies 📊 Manage jobs 🔍 Monitor applications
+
 🛠️ Tech Stack
-Technology	Role
-☕ Java	Backend Logic
-🔗 JDBC	Database Connectivity
-🛢️ MySQL	Database
-🌐 HTML	Structure
-🎨 CSS	Styling
-⚡ JavaScript	Interactivity
-💻 IntelliJ IDEA	IDE
-📁 Project Structure
-SmartPlacementSystem/
-│
-├── src/
-│   ├── controller/     # Handles user actions
-│   ├── dao/            # Database operations
-│   ├── model/          # POJO classes
-│   ├── service/        # Business logic
-│   └── util/           # DB connection
-│
-├── view/
-│   ├── html/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── sql/
-│   └── schema.sql
-│
-├── lib/
-│   └── mysql-connector
-│
-└── README.md
-🏗️ System Design
-🔹 Controller Layer
 
-Handles user requests like login, job application, job posting.
+Technology Role ☕ Java Backend Logic 🔗 JDBC Database Connectivity 🛢️ MySQL Database 🌐 HTML Structure 🎨 CSS Styling ⚡ JavaScript Interactivity 💻 IntelliJ IDEA IDE
 
-🔹 Service Layer
+📁 Project Structure SmartPlacementSystem/ │ ├── src/ │ ├── controller/ # Handles user actions │ ├── dao/ # Database operations │ ├── model/ # POJO classes │ ├── service/ # Business logic │ └── util/ # DB connection │ ├── view/ │ ├── html/ │ ├── css/ │ ├── js/ │ └── images/ │ ├── sql/ │ └── schema.sql │ ├── lib/ │ └── mysql-connector │ └── README.md
 
-Contains business logic (e.g., eligibility checks).
+🏗️ 🔷 SYSTEM DESIGN (EXPLAINED) 🔹 1. Controller Layer Handles HTTP/User requests Routes actions (Login, Apply Job, Post Job) 🔹 2. Service Layer Contains business logic Example: eligibility checks before applying 🔹 3. DAO Layer Handles database queries using JDBC Performs CRUD operations 🔹 4. Database Layer Stores structured data: Students Companies Jobs Applications
 
-🔹 DAO Layer
+🗄️ Database
 
-Handles database operations using JDBC (CRUD).
+Tables used in the system:
 
-🔹 Database Layer
+👨‍🎓 students 🏢 companies 💼 jobs 📩 applications
 
-Stores:
+⚙️ Installation & Setup 🔹 1. Clone Repository git clone https://github.com/jiteshkhatri11/SmartPlacementSystem.git 🔹 2. Open in IntelliJ File → Open → Select Project 🔹 3. Add MySQL Connector Place JAR in lib/ Add to dependencies 🔹 4. Setup Database CREATE DATABASE placement_db; 🔹 5. Run Schema Execute sql/schema.sql 🔹 6. Configure DB
 
-Students
-Companies
-Jobs
-Applications
-🗄️ Database Tables
-👨‍🎓 students
-🏢 companies
-💼 jobs
-📩 applications
-⚙️ Installation & Setup
-1️⃣ Clone Repository
-git clone https://github.com/jiteshkhatri11/SmartPlacementSystem.git
-2️⃣ Open in IntelliJ
-File → Open → Select Project
-3️⃣ Add MySQL Connector
-Place JAR in lib/
-Add to dependencies
-4️⃣ Create Database
-CREATE DATABASE placement_db;
-5️⃣ Run Schema
-Execute sql/schema.sql
-6️⃣ Configure Database
+Create: src/util/db.properties
 
-Create file: src/util/db.properties
+db.url=jdbc:mysql://localhost:3306/placement_db db.user=root db.password=your_password 🔹 7. Run Project Open view/html/index.html
 
-db.url=jdbc:mysql://localhost:3306/placement_db
-db.user=root
-db.password=your_password
-7️⃣ Run Project
-Open view/html/index.html
 📸 Screenshots
 
 🚧 Coming Soon
 
-🚀 Future Improvements
-📄 Resume Upload Feature
-📧 Email Notifications
-📊 Admin Dashboard
-🌐 REST API Integration
-🚀 Spring Boot Migration
+🚀 Future Improvements 📄 Resume Upload Feature 📧 Email Notifications 📊 Admin Dashboard Analytics 🌐 REST API Integration 🚀 Migration to Spring Boot
+
 👨‍💻 Author
 
-Jitesh Khatri
-🔗 GitHub: https://github.com/jiteshkhatri11
+Jitesh Khatri 🔗 GitHub: https://github.com/jiteshkhatri11
 
 📄 License
 
-MIT License
+This project is licensed under the MIT License.
 
-⭐ Support
-⭐ Star the repository
-🍴 Fork it
-🛠 Contribute
+About
+A Java based Smart Placement System
+
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 0 watching
+Forks
+ 0 forks
+Releases
+No releases published
+Create a new release
+Packages
+No packages published
+Publish your first package
+Contributors
+1
+@jiteshkhatri11
+jiteshkhatri11 Jitesh Khatri
+Languages
+Java
+100.0%
+Suggested workflows
+Based on your tech stack
+Java with Ant logo
+Java with Ant
+Build and test a Java project with Apache Ant.
+Scala logo
+Scala
+Build and test a Scala project with SBT.
+Publish Java Package with Maven logo
+Publish Java Package with Maven
+Build a Java Package using Maven and publish to GitHub Packages.
+More workflows
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
