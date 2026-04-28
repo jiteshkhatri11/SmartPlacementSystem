@@ -1,142 +1,137 @@
-Skip to content
-jiteshkhatri11
-SmartPlacementSystem
-Repository navigation
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Owner avatar
-SmartPlacementSystem
-Public
-jiteshkhatri11/SmartPlacementSystem
-Go to file
-t
-T
-Name		
-jiteshkhatri11
-jiteshkhatri11
-Create README.md
-2e5c068
- · 
-now
-src
-Day 1 - Added src folder with model, dao and util packages
-15 minutes ago
-README.md
-Create README.md
-now
-Repository files navigation
-README
 🎓 SmartPlacementSystem
 
 A Java-based Smart Placement System designed to connect students with companies for seamless job placement management.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 📌 Overview
 
-A full-stack Java-based Smart Placement System that connects students and companies for efficient job placement management.
+SmartPlacementSystem is a full-stack application that streamlines the placement process by enabling:
 
-This system simplifies the recruitment process by providing a centralized platform for job postings, applications, and administration.
+Students to explore and apply for jobs
+Companies to post job opportunities and manage applicants
+Admin to monitor and control the entire system
 
-✨ Features
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🚀 Key Features
 
-👨‍🎓 Student
 
-📝 Register & Login 🔍 Browse job opportunities 📩 Apply for jobs 📊 Track application status
+👨‍🎓 Student Module
+Register & Login
+View available job listings
+Apply for jobs
+Track application status
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🏢 Company
+🏢 Company Module
+Register & Login
+Post job openings
+View student applications
+Manage recruitment process
 
-📝 Register & Login 📢 Post job openings 👀 View applicants 🛠 Manage hiring process
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-⚙️ Admin
+⚙️ Admin Module
+View all students
+View all companies
+Manage job postings
+Monitor applications
 
-📋 View all students 🏢 View all companies 📊 Manage jobs 🔍 Monitor applications
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Tech Stack
+Technology	Purpose
+Java	Backend logic
+JDBC	Database connectivity
+MySQL	Database management
+HTML	Frontend structure
+CSS	Styling
+JavaScript	Client-side interactivity
+IntelliJ IDEA	Development environment
 
-Technology Role ☕ Java Backend Logic 🔗 JDBC Database Connectivity 🛢️ MySQL Database 🌐 HTML Structure 🎨 CSS Styling ⚡ JavaScript Interactivity 💻 IntelliJ IDEA IDE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📁 Project Structure SmartPlacementSystem/ │ ├── src/ │ ├── controller/ # Handles user actions │ ├── dao/ # Database operations │ ├── model/ # POJO classes │ ├── service/ # Business logic │ └── util/ # DB connection │ ├── view/ │ ├── html/ │ ├── css/ │ ├── js/ │ └── images/ │ ├── sql/ │ └── schema.sql │ ├── lib/ │ └── mysql-connector │ └── README.md
+📁 Project Structure
+SmartPlacementSystem/
+│
+├── src/
+│   ├── controller/     # Handles user requests
+│   ├── dao/            # Database operations (JDBC)
+│   ├── model/          # POJO classes
+│   ├── service/        # Business logic
+│   └── util/           # Utility classes (DB connection)
+│
+├── view/
+│   ├── html/           # HTML pages
+│   ├── css/            # Stylesheets
+│   ├── js/             # JavaScript files
+│   └── images/         # Assets
+│
+├── sql/
+│   └── schema.sql      # Database schema
+│
+├── lib/
+│   └── mysql-connector # JDBC driver
+│
+└── README.md
 
-🏗️ 🔷 SYSTEM DESIGN (EXPLAINED) 🔹 1. Controller Layer Handles HTTP/User requests Routes actions (Login, Apply Job, Post Job) 🔹 2. Service Layer Contains business logic Example: eligibility checks before applying 🔹 3. DAO Layer Handles database queries using JDBC Performs CRUD operations 🔹 4. Database Layer Stores structured data: Students Companies Jobs Applications
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🗄️ Database
 
-Tables used in the system:
+🗄️ Database Schema
 
-👨‍🎓 students 🏢 companies 💼 jobs 📩 applications
+The system uses the following tables:
 
-⚙️ Installation & Setup 🔹 1. Clone Repository git clone https://github.com/jiteshkhatri11/SmartPlacementSystem.git 🔹 2. Open in IntelliJ File → Open → Select Project 🔹 3. Add MySQL Connector Place JAR in lib/ Add to dependencies 🔹 4. Setup Database CREATE DATABASE placement_db; 🔹 5. Run Schema Execute sql/schema.sql 🔹 6. Configure DB
+students → Stores student details
+companies → Stores company information
+jobs → Job postings
+applications → Job applications by students
+⚙️ Setup Guide
+1️⃣ Clone the Repository
+git clone https://github.com/jiteshkhatri11/SmartPlacementSystem.git
+2️⃣ Import into IntelliJ
+Open IntelliJ IDEA
+Select Open Project
+Choose the project folder
+3️⃣ Add MySQL Connector
+Download MySQL Connector JAR
+Place it inside lib/
+Add it to project dependencies
+4️⃣ Create Database
+CREATE DATABASE placement_db;
+5️⃣ Run Schema File
+Execute sql/schema.sql in MySQL
+6️⃣ Configure Database Connection
 
-Create: src/util/db.properties
+Create file: src/util/db.properties
 
-db.url=jdbc:mysql://localhost:3306/placement_db db.user=root db.password=your_password 🔹 7. Run Project Open view/html/index.html
+db.url=jdbc:mysql://localhost:3306/placement_db
+db.user=root
+db.password=your_password
+7️⃣ Run the Project
+Open view/html/index.html in your browser
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 📸 Screenshots
 
+
 🚧 Coming Soon
 
-🚀 Future Improvements 📄 Resume Upload Feature 📧 Email Notifications 📊 Admin Dashboard Analytics 🌐 REST API Integration 🚀 Migration to Spring Boot
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 👨‍💻 Author
 
-Jitesh Khatri 🔗 GitHub: https://github.com/jiteshkhatri11
+Jitesh Khatri
+🔗 GitHub: https://github.com/jiteshkhatri11
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📄 License
 
 This project is licensed under the MIT License.
-
-About
-A Java based Smart Placement System
-
-Resources
- Readme
- Activity
-Stars
- 0 stars
-Watchers
- 0 watching
-Forks
- 0 forks
-Releases
-No releases published
-Create a new release
-Packages
-No packages published
-Publish your first package
-Contributors
-1
-@jiteshkhatri11
-jiteshkhatri11 Jitesh Khatri
-Languages
-Java
-100.0%
-Suggested workflows
-Based on your tech stack
-Java with Ant logo
-Java with Ant
-Build and test a Java project with Apache Ant.
-Scala logo
-Scala
-Build and test a Scala project with SBT.
-Publish Java Package with Maven logo
-Publish Java Package with Maven
-Build a Java Package using Maven and publish to GitHub Packages.
-More workflows
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
