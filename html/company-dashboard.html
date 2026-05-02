@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>🎓 SmartPlacementSystem</h1>
+    <p>Company Dashboard</p>
+</header>
+
+<!-- Dashboard -->
+<main>
+    <div class="dashboard">
+
+        <!-- Welcome -->
+        <h2>👋 Welcome, <span id="companyName">Company</span>!</h2>
+        <br>
+
+        <!-- Post New Job -->
+        <h3>➕ Post a New Job</h3>
+        <br>
+        <div class="form-container" style="margin:0; max-width:100%;">
+
+            <div id="message"></div>
+
+            <div class="form-group">
+                <label>Job Title</label>
+                <input type="text" id="title" placeholder="e.g. Java Developer">
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea id="description" rows="3"
+                          placeholder="Job description..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Salary</label>
+                <input type="text" id="salary" placeholder="e.g. 5-8 LPA">
+            </div>
+
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" id="location" placeholder="e.g. Mumbai">
+            </div>
+
+            <button onclick="postJob()">Post Job</button>
+        </div>
+
+        <br><br>
+
+        <!-- Posted Jobs -->
+        <h3>📋 My Posted Jobs</h3>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Applications</th>
+            </tr>
+            </thead>
+            <tbody id="jobsTable">
+            <tr>
+                <td colspan="4" style="text-align:center;">
+                    No jobs posted yet
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button onclick="logout()"
+                style="width:150px; background-color:#e74c3c;">
+            Logout
+        </button>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 SmartPlacementSystem | All Rights Reserved</p>
+</footer>
+
+<script src="../js/company.js"></script>
+</body>
+</html>

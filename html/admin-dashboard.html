@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>🎓 SmartPlacementSystem</h1>
+    <p>Admin Dashboard</p>
+</header>
+
+<!-- Dashboard -->
+<main>
+    <div class="dashboard">
+
+        <h2>⚙️ Admin Panel</h2>
+        <br>
+
+        <!-- Stats -->
+        <div class="card-container">
+            <div class="card">
+                <h2>👨‍🎓</h2>
+                <h3 id="totalStudents">0</h3>
+                <p>Total Students</p>
+            </div>
+            <div class="card">
+                <h2>🏢</h2>
+                <h3 id="totalCompanies">0</h3>
+                <p>Total Companies</p>
+            </div>
+            <div class="card">
+                <h2>💼</h2>
+                <h3 id="totalJobs">0</h3>
+                <p>Total Jobs</p>
+            </div>
+            <div class="card">
+                <h2>📋</h2>
+                <h3 id="totalApplications">0</h3>
+                <p>Total Applications</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- All Students -->
+        <h3>👨‍🎓 All Students</h3>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Skills</th>
+            </tr>
+            </thead>
+            <tbody id="studentsTable">
+            <tr>
+                <td colspan="4" style="text-align:center;">
+                    No students found
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!-- All Companies -->
+        <h3>🏢 All Companies</h3>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Industry</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody id="companiesTable">
+            <tr>
+                <td colspan="5" style="text-align:center;">
+                    No companies found
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <!-- All Jobs -->
+        <h3>💼 All Jobs</h3>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Salary</th>
+            </tr>
+            </thead>
+            <tbody id="jobsTable">
+            <tr>
+                <td colspan="4" style="text-align:center;">
+                    No jobs found
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button onclick="logout()"
+                style="width:150px; background-color:#e74c3c;">
+            Logout
+        </button>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 SmartPlacementSystem | All Rights Reserved</p>
+</footer>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>
